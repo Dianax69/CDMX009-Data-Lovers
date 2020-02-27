@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.categories li a:hover {
+    width: 1000px;
+    margin: 30px auto;
+    background: teal;
+    background-color: yellow;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    list-style: none;
+}
+
+.categories > li {
+    float: left;
+}
+
+.categories li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.categories li:hover > ul {
+    display: inline-block;
+}
+
+.categories li ul li {
+    position: relative;
+}
+
+
+
