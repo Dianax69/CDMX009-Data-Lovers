@@ -7,18 +7,11 @@
 }
 
 .categories li a:hover {
-    width: 1000px;
-    margin: 30px auto;
-    background: teal;
-    background-color: yellow;
-    color: white;
-    padding: 10px 15px;
-    display: block;
-    list-style: none;
+    
 }
 
 .categories > li {
-    float: left;
+
 }
 
 .categories li ul {
