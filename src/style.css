@@ -1,8 +1,11 @@
-<<<<<<< HEAD
 *{
   background-color: #263238;
+  font-family: "src/asset/font_rickmorty2.ttf" ;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .slider-container{
 
@@ -17,37 +20,47 @@
   width: 100%;
   overflow: hidden;
 }
-=======
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+
+.characters:hover {
+  background-color: chartreuse;
+  transition-duration: 0.4s;
 }
 
-.categories li a:hover {
-    
+.characters {
+  background-color: #273238;
+  color:#00B0C8;
+  font-size: 20px;
+  border: #CEFF24;
+  padding: 17px 129px;
+  border-radius: 8px;
+  border-style: ridge;
+  margin-left: 486px;
+  margin-bottom: 19px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-.categories > li {
-
+.categories ul {
+  display: flex;
+  border: #CEFF24;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-
-.categories li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
+.categories a {
+  display: block;
+  padding: 19px 33px;
+  background-color:#273238;
+  text-decoration: none;
+  color:#00B0C8;
+  margin-left: 90px;
+  padding-top: 22px;
+  border-radius: 16px 16px 16px 16px;
 }
-
-.categories li:hover > ul {
-    display: inline-block;
+.categories a:hover {
+  background-color: chartreuse;
 }
-
-.categories li ul li {
-    position: relative;
+.categories ul li ul {
+  display: none;
 }
-
-
-
->>>>>>> f7f6a30ef261ca1582d114459b365fb5ef6e0a81
+.categories ul li a:hover + ul, .categories ul li ul:hover {
+  display: block;
+}
