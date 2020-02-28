@@ -1,0 +1,18 @@
+*{
+  background-color: #263238;
+  margin: 0;
+  padding: 0;
+}
+.slider-container{
+
+}
+
+.container-slider{
+  width: 100%;
+  display: flex;
+}
+
+.container{
+  width: 100%;
+  overflow: hidden;
+}
