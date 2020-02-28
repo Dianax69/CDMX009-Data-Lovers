@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+*{
+  background-color: #263238;
+  margin: 0;
+  padding: 0;
+}
+.slider-container{
+
+}
+
+.container-slider{
+  width: 100%;
+  display: flex;
+}
+
+.container{
+  width: 100%;
+  overflow: hidden;
+}
+=======
 * {
     margin: 0;
     padding: 0;
@@ -30,3 +50,4 @@
 
 
 
+>>>>>>> f7f6a30ef261ca1582d114459b365fb5ef6e0a81
