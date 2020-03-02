@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
   background-color: #263238;
   margin: 0;
@@ -17,14 +16,7 @@
   width: 100%;
   overflow: hidden;
 }
-=======
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 
 .categories li a:hover {
     width: 1000px;
@@ -55,6 +47,4 @@
     position: relative;
 }
 
-
-
->>>>>>> f7f6a30ef261ca1582d114459b365fb5ef6e0a81
+div
