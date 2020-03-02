@@ -4,6 +4,7 @@ body{
   background-repeat: no-repeat;
   font-family: "Bubblegum Sans", sans-serif;
   font-size: larger;
+  width: 100%;
 }
 
 .container-slider{
@@ -19,7 +20,6 @@ body{
 .characters:hover {
   background-color: rgb(166, 238, 93);
   transition-duration: 0.4s;
-  opacity: 1.0;
 }
 
 .characters {
@@ -39,10 +39,10 @@ body{
 }
 
 .categories ul {
-  display: flex;
+  display: inline-flex;
   padding: 0;
-  margin: 0;
   list-style: none;
+  opacity: .8;
 }
 .categories a {
   display: block;
@@ -55,6 +55,7 @@ body{
   margin-left: 107px;
   padding-top: 22px;
   border-radius: 16px 16px 16px 16px;
+  opacity: .8;
 }
 .categories a:hover {
   background-color: rgb(166, 238, 93);
@@ -63,17 +64,20 @@ body{
 }
 .categories ul li ul {
   display: none;
+  opacity: .8;
 }
 .categories ul li a:hover + ul, .categories ul li ul:hover {
   display: block;
+  opacity: .8;
 }
 
 #footer {
   background-image: url("asset/banner4footer.jpg");
-  background-position: center;
+  background-position: bottom;
   text-align: center;
   color: rgb(241, 250, 55);
   max-width: 100%;
   height: auto;
-  padding: 250px;
+  padding: 52px;
+  background-repeat: no-repeat;
 }
