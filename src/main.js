@@ -1,3 +1,11 @@
+/*import {example} from './data.js';
+
+example("hola mundo");
+
+ let botonAlien = document.querySelector('#Alien').addEventListener('click' probar);
+function probar(){} */
+
+
 let slider = document.querySelector('.container-slider')
 let sliderIndividual = document.querySelectorAll('.slider-container')
 let contador = 1;

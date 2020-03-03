@@ -1,13 +1,28 @@
-// import data from './data/injuries/injuries.js';
-// import data from './data/lol/lol.js';
-// import data from './data/patient/patient.js';
-// import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/steam/steam.js';
-// import data from './data/steam/worldbank.js';
+export const example = (mensaje) => {
+  alert(mensaje);
+}
 
-// esta es una función de ejemplo
+/* const buttonChar = document.getElementById("button-char");
+  buttonChar.addEventListener("click", function()){
+    let requestRandomChar = new XMLHttpRequest ();
+    requestRandomChar.open("GET", "../data/rickandmorty/rickandmorty.json");
+    requestRandomChar.onload = function() {
+      console.log(requestRandomChar.responseText)
+      let dataRickMor = JSON.parse(requestRandomChar.responseText)
+      console.log()
+    }
+  };
+  requestRandomChar.send();
+      */
 
-export const example = () => {
-  return 'example';
-};
+  const getAlien = document.getElementById("");
+    buttonChar.addEventListener("click", function()){
+      let requestRandomChar = new XMLHttpRequest ();
+      requestRandomChar.open("GET", "../data/rickandmorty/rickandmorty.json");
+      requestRandomChar.onload = function() {
+        console.log(requestRandomChar.responseText)
+        let dataRickMor = JSON.parse(requestRandomChar.responseText)
+        console.log()
+      }
+    };
+    requestRandomChar.send();
