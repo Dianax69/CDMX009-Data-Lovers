@@ -1,3 +1,7 @@
+// alias for import
+// import data from './data.js';
+
+
 let slider = document.querySelector('.container-slider')
 let sliderIndividual = document.querySelectorAll('.slider-container')
 let contador = 1;
@@ -23,4 +27,9 @@ function slides(){
       contador=1;
     },1500)
   }
-}
+};
+// function showRandomChar () {
+//   document.getElementById("random-char").style.display = "none";
+// };
+
+// window.showRandomChar = showRandomChar;
