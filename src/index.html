@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Wubba Lubba Dub Dub!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wubba Lubba Dub Dub!</title>
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Bubblegum+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans">
   </head>
   <body>
     <header>
-    <div class="container">
-      <div class="container-slider">
-      <div class="slider-container"><img src="asset/bienvenido.png" alt=""></div>
-      <div class="slider-container"><img src="asset/bienvenido1.png" alt=""></div>
-      <div class="slider-container"><img src="asset/bienvenido2.png" alt=""></div>
-      <div class="slider-container"><img src="asset/bienvenido.png" alt=""></div>
+      <div class="container">
+        <div class= "container-slider">
+        <div class="slider-container"><img src="asset/bienvenido.png" alt=""></div>
+        <div class="slider-container"><img src="asset/bienvenido1.png" alt=""></div>
+        <div class="slider-container"><img src="asset/bienvenido2.png" alt=""></div>
+        <div class="slider-container"><img src="asset/bienvenido.png" alt=""></div>
       </div>
-    </div>
+      </div>
     </header>
     <div>
-      <button class="characters" id="button-char" >Personajes</button>
+      <button class="characters" id="random-char" onclick="requestRandomChar()">Personajes</button>
     </div>
-    <section>
-    <nav class="categories">
+    <div class="categories">
       <ul>
-        <li><a href="">Especie</a>
+        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Especie</a>
           <ul>
            <li><a href="#" id="Alien">Alien</a></li>
            <li><a href="#">Animal</a></li>
@@ -35,31 +34,28 @@
            <li><a href="">Enfermedad</a></li>
            <li><a href="">Humano</a></li>
            <li><a href="">Humanoide</a></li>
-           <li><a href="">Mitologico</a></li>
+           <li><a href="">Mitológico</a></li>
            <li><a href="">Parásito</a></li>
            <li><a href="">Robot</a></li>
            <li><a href="">Vampire</a></li>
           </ul>
         </li>
-
-        <li><a href="">Genero</a>
+        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Género</a>
           <ul>
             <li><a href="">Desconocido</a></li>
             <li><a href="">Femenino</a></li>
             <li><a href="">Masculino</a></li>
-            <li><a href="">Sin Genero</a></li>
+            <li><a href="">Sin Género</a></li>
           </ul>
         </li>
-
-        <li><a href="">Estado</a>
+        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Estado</a>
           <ul>
             <li><a href="">Vivo</a></li>
             <li><a href="">Muerto</a></li>
             <li><a href="">Desconocido</a></li>
           </ul>
         </li>
-
-        <li><a href="">Origen</a>
+        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Origen</a>
           <ul>
             <li><a href="">Abadango</a></li>
             <li><a href="">Alphabetrium</a></li>
@@ -73,11 +69,10 @@
             <li><a href="">Tierra 5-126</a></li>
             <li><a href="">Tierra C-500A</a></li>
             <li><a href="">Tierra C-137</a></li>
-            <li><a href="">Tierra Dimension de Reemplazo</a></li>
+            <li><a href="">Tierra Dimensión de Reemplazo</a></li>
           </ul>
         </li>
-
-        <li><a href="">Episodios</a>
+        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Episodios</a>
           <ul>
             <li><a href="">Temporada 1</a></li>
             <li><a href="">Temporada 2</a></li>
@@ -85,11 +80,17 @@
           </ul>
         </li>
       </ul>
+    </div>
 
-    </nav>
-  </section>
-    <footer id="footer">
-      <p>For Laboratoria, bitch!</p>
+  <!--Boton para obtener data ejem -->
+  <button class="btn btn-danger w-100" id="get">getData</button>
+  <!--Aqui se va a pintar la información -->
+  <div class="mt-5" id="conteiner">
+<p></p>
+  </div>
+
+    <footer class="credits" id="footer">
+      <p>Created by: Dianax69 & IrisFyD. For &lt;Laboratoria&gt;, bitch!</p>
     </footer>
     <script type="module" src="main.js"></script>
   </body>

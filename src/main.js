@@ -1,11 +1,28 @@
-/*import {example} from './data.js';
+//importar funciones del data
+import data from './data/rickandmorty/rickandmorty.js';
 
-example("hola mundo");
+//crear function que muestre los datos
+let verdata = data;
+function traer() {
+    fetch('data')
 
- let botonAlien = document.querySelector('#Alien').addEventListener('click' probar);
-function probar(){} */
+}
+
+// console.log(data.info.pages);
+
+//referencia
+//let getData = document.querySelector('#get')
+//observador
+//getData.addEventListener('click', mostrar)
 
 
+
+
+
+
+
+
+//Funciones para el slider
 let slider = document.querySelector('.container-slider')
 let sliderIndividual = document.querySelectorAll('.slider-container')
 let contador = 1;
@@ -31,4 +48,9 @@ function slides(){
       contador=1;
     },1500)
   }
-}
+};
+// function showRandomChar () {
+//   document.getElementById("random-char").style.display = "none";
+// };
+
+// window.showRandomChar = showRandomChar;
