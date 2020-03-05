@@ -29,16 +29,30 @@ function slides(){
   }
 };
 
-
-
 const objectRMData = rickResultData();
 for (const index in objectRMData) {
+  const imgCharacter = objectRMData[index].image;
   const idCharacter = objectRMData[index].id;
   const nameCharacter = objectRMData[index].name;
-  const htmlCardContainerId = `<li>"${idCharacter}"</li>`;
-  const htmlCardContainerName = `<li>"${nameCharacter}"</li>`;
+  const statusCharacter = objectRMData[index].status;
+  const genderCharacter = objectRMData[index].gender;
+  const originCharacter = objectRMData[index].origin.name;
+  const htmlCardContainerImage = `${imgCharacter,''}`;
+  const htmlCardContainerId = `${idCharacter}`;
+  const htmlCardContainerName = `${nameCharacter}`;
+  const htmlCardContainerStatus = `${statusCharacter}`;
+  const htmlCardContainerGender = `${genderCharacter}`;
+  const htmlCardContainerOrigin = `${originCharacter}`;
+  var html = "<p>Hello, <b>World</b>";
+var div = document.createElement("div");
+div.innerHTML = html;
+  document.getElementById('id-character').append(htmlCardContainerImage);
   document.getElementById('id-character').append(htmlCardContainerId);
   document.getElementById('id-character').append(htmlCardContainerName);
+  document.getElementById('id-character').append(htmlCardContainerStatus);
+  document.getElementById('id-character').append(htmlCardContainerGender);
+  document.getElementById('id-character').append(htmlCardContainerOrigin);
+  document.createElement("li")
 }
 
 document.getElementById('seasons-button').addEventListener('click', () => {

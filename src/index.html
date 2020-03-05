@@ -22,7 +22,7 @@
     </header>
     <!-- Button to show random characters -->
     <div>
-      <button class="button_characters" id="button-random-char">Personajes</button>
+      <button class="button_characters" id="button-random-char">Personajes  Aleatorios</button>
     </div>
     <!-- Starts drop down menu -->
     <div class="categories" id="drop-down-menu">
@@ -86,7 +86,12 @@
     <!-- cards to show random characters -->
   <section>
     <div class="cardsChar" id="char-cointainer">
-      <div id="id-character"></div>
+      <div id="id-character">
+          <img src="./data.js" alt="Avatar" style="width:50%">
+            <h4><b>${result.name}</b></h4>
+            <p>${result.id}</p>
+          </div>
+        </div> 
     </div>
     <!-- Mobile menu -->
     <!-- 
@@ -101,7 +106,6 @@
       </ul>
     </div>
   </section> -->
- 
     <!-- footer and credits -->
     <footer class="credits" id="footer">
       <p>Created by: Dianax69 & IrisFyD. For &lt;Laboratoria&gt;, bitch!</p>
