@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wubba Lubba Dub Dub!</title>
-    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans">
   </head>
   <body>
+    <!-- Header slider -->
     <header>
       <div class="container">
         <div class= "container-slider">
@@ -20,13 +20,15 @@
       </div>
       </div>
     </header>
+    <!-- Button to show random characters -->
     <div>
-      <button class="characters" id="random-char" onclick="requestRandomChar()">Personajes</button>
+      <button class="button_characters" id="button-random-char">Personajes</button>
     </div>
-    <div class="categories">
+    <!-- Starts drop down menu -->
+    <div class="categories" id="drop-down-menu">
       <ul>
-        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Especie</a>
-          <ul>
+        <li><a class ="main_menu" id="species">Especie</a>
+          <ul class="submenu_species">
            <li><a href="#">Alien</a></li>
            <li><a href="#">Animal</a></li>
            <li><a href="#">Cronenberg</a></li>
@@ -40,23 +42,23 @@
            <li><a href="">Vampire</a></li>
           </ul>
         </li>
-        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Género</a>
-          <ul>
+        <li><a class ="main_menu" id="gender">Género</a>
+          <ul class="submenu_gender">
             <li><a href="">Desconocido</a></li>
             <li><a href="">Femenino</a></li>
             <li><a href="">Masculino</a></li>
             <li><a href="">Sin Género</a></li>
           </ul>
         </li>
-        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Estado</a>
-          <ul>
+        <li><a class ="main_menu" id="status">Estado</a>
+          <ul class="submenu_status">
             <li><a href="">Vivo</a></li>
             <li><a href="">Muerto</a></li>
             <li><a href="">Desconocido</a></li>
           </ul>
         </li>
-        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Origen</a>
-          <ul>
+        <li><a class ="main_menu" id="origin">Origen</a>
+          <ul class="submenu_origin">
             <li><a href="">Abadango</a></li>
             <li><a href="">Alphabetrium</a></li>
             <li><a href="">Bepis 9</a></li>
@@ -72,26 +74,38 @@
             <li><a href="">Tierra Dimensión de Reemplazo</a></li>
           </ul>
         </li>
-        <li><a href="" style="border:3px; border-style:solid; border-color:#CEFF24; padding: 1em;">Episodios</a>
-          <ul>
-            <li><a href="">Temporada 1</a></li>
-            <li><a href="">Temporada 2</a></li>
-            <li><a href="">Temporada 3</a></li>
-          </ul>
-        </li>
+        <li><button class ="all_seasons" id="seasons-button">Episodios</a></li>
       </ul>
     </div>
+    <!-- Page for Seasons -->
+  <section id="seasons" class="input_seasons">
+    <input type="image" src="./asset/seasonone.jpg"/>Temporada 1</li>
+    <input type="image" src="./asset/seasontwo.jpg"/>Temporada 2</li>
+    <input type="image" src="./asset/seasonthree.jpg"/>Temporada 3</li>
+</section>
+    <!-- cards to show random characters -->
   <section>
     <div class="cardsChar" id="char-cointainer">
-      <p>Personajes random</p>
-      <p>Tarjetas de Personajes</p>
-      <p>nombre</p>
-      <p>Origen</p>
+      <div id="id-character"></div>
     </div>
-  </section>
+    <!-- Mobile menu -->
+    <!-- 
+    <section>
+    <div>
+      <ul class="sidenav" id="mobile-menu">
+        <li><a href="" id="species">Especies</a></li>
+        <li><a id="gender">Género</a></li>
+        <li><a id="status">Estado</a></li>
+        <li><a id="origin">Historia</a></li>
+        <li><a id="episodes">Episodios</a></li>
+      </ul>
+    </div>
+  </section> -->
+ 
+    <!-- footer and credits -->
     <footer class="credits" id="footer">
       <p>Created by: Dianax69 & IrisFyD. For &lt;Laboratoria&gt;, bitch!</p>
     </footer>
-    <script type="text/javascript" src="main.js"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
