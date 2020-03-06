@@ -29,6 +29,8 @@ function slides(){
   }
 };
 
+return; 
+
 const objectRMData = rickResultData();
 for (const index in objectRMData) {
   const imgCharacter = objectRMData[index].image;
@@ -38,7 +40,7 @@ for (const index in objectRMData) {
   const genderCharacter = objectRMData[index].gender;
   const originCharacter = objectRMData[index].origin.name;
   const htmlCardContainerImage = `${imgCharacter,''}`;
-  const htmlCardContainerId = `${idCharacter}`;
+  const htmlCardContainerId = `${idCharacter}`;l
   const htmlCardContainerName = `${nameCharacter}`;
   const htmlCardContainerStatus = `${statusCharacter}`;
   const htmlCardContainerGender = `${genderCharacter}`;
