@@ -123,6 +123,12 @@ body{
   overflow: hidden;
 }
 
+#container-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .credits > p {
   text-align: center;
   margin: 15px;
@@ -179,9 +185,8 @@ p {
   display: none;
 }
 
-.wrapper_data {
+#wrapper_data {
   display: flex;
   margin-top: 130px;
   padding-left: 28px;
-  margin-right: 675px;
 }
