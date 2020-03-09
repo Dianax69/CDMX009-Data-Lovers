@@ -123,6 +123,18 @@ body{
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px 1024px) {
+  .container-slider {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .container-slider, container {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
 #container-cards {
   display: flex;
   justify-content: space-around;
@@ -150,11 +162,11 @@ body{
 }
 
 .img-container img {
-  height: 218px;
+  height: 249px;
   border-radius: 50px;
   position: absolute;
-  padding-top: 11px;
-  padding-left: 14px;
+  padding-top: 25px;
+  padding-left: 13px;
   z-index: -1;
 }
 
@@ -170,8 +182,8 @@ p {
   color: #00B0C8;
   font-size: 20px;
   display: flex;
-  padding-left: 452px;
-  margin-top: -23px;
+  padding-left: 436px;
+  margin-top: -24px;
 }
 
 .properties_characters span {
@@ -183,10 +195,12 @@ p {
 
 #seasons {
   display: none;
+  width: 285px;
 }
 
 #wrapper_data {
   display: flex;
-  margin-top: 130px;
-  padding-left: 28px;
+  margin-top: 150px;
+  padding-left: 29px;
+  padding-right: 34px;
 }

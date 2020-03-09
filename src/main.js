@@ -28,7 +28,6 @@ function slides(){
     },1500)
   }
 };
- 
 
 const objectRMData = rickResultData();
 const dataSlice = objectRMData.slice(0, 12);
@@ -72,7 +71,4 @@ const makeCard = () => {
 };
 makeCard();
 
-document.getElementById('seasons-button').addEventListener('click', () => {
-  container.innerHTML = '';
-  document.getElementById('seasons').style.display = 'block';
-});
+const resultData = objectRMData.filter(objectRMData => word.length > 6);
