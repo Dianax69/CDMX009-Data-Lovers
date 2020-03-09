@@ -31,11 +31,48 @@ function slides(){
  
 
 const objectRMData = rickResultData();
-for (const index in objectRMData) {
-  const imgCharacter = objectRMData[index].image;
-  div.innerHTML = html;
-}
+const dataSlice = objectRMData.slice(0, 12);
+const container = document.getElementById('container-cards');
+const makeCard = () => {
+  Object.entries(dataSlice).forEach(([key, value]) => {
+    const card = `
+    <div class="cards_char" id="${key}">
+      <div class="img-container">
+          <img src="${value.image}" alt="character image">
+      </div>
+      <div class="properties-container">
+        <div class="properties_characters">
+          <span>Número de ID:</span>
+          <p>${value.id}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Nombre:</span>
+          <p>${value.name}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Estado:</span>
+          <p>${value.status}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Género:</span>
+          <p>${value.gender}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Origen:</span>
+          <p>${value.origin.name}</p>
+        </div> 
+        <div class="properties_characters">
+          <span>Locación:</span>
+          <p>${value.location.name}</p>
+        </div> 
+      </div>
+      `;
+    container.innerHTML += card;
+  });
+};
+makeCard();
 
 document.getElementById('seasons-button').addEventListener('click', () => {
+  container.innerHTML = '';
   document.getElementById('seasons').style.display = 'block';
 });
