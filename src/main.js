@@ -2,7 +2,7 @@
 import { rickResultData } from './data.js';
 //Data
 const objectRMData = rickResultData();
-
+/*
 //FILTER OF ESPECIE
 //Fiter of EspecieAlien 1
 const filterAlien = objectRMData.filter (item => {
@@ -184,7 +184,7 @@ buttonGenderUnknown.addEventListener('click',() =>{
     result.appendChild(listItem)
   }
 })
-
+*/
 
 
 
@@ -193,7 +193,7 @@ let slider = document.querySelector('.container-slider')
 let sliderIndividual = document.querySelectorAll('.slider-container')
 let contador = 1;
 let width = sliderIndividual[0].clientWidth;
-let intervalo = 5000;
+let intervalo = 2500;
 
 window.addEventListener("resize", function() {
   width = sliderIndividual[0].clientWidth;
@@ -217,37 +217,50 @@ function slides(){
 };
 
 
-
-
-
-
-/*
-for (const index in objectRMData) {
-  const imgCharacter = objectRMData[index].image;
-  const idCharacter = objectRMData[index].id;
-  const nameCharacter = objectRMData[index].name;
-  const statusCharacter = objectRMData[index].status;
-  const genderCharacter = objectRMData[index].gender;
-  const originCharacter = objectRMData[index].origin.name;
-  const htmlCardContainerImage = `${imgCharacter,''}`;
-  const htmlCardContainerId = `${idCharacter}`;
-  const htmlCardContainerName = `${nameCharacter}`;
-  const htmlCardContainerStatus = `${statusCharacter}`;
-  const htmlCardContainerGender = `${genderCharacter}`;
-  const htmlCardContainerOrigin = `${originCharacter}`;
-  var html = "<p>Hello, <b>World</b>";
-var div = document.createElement("div");
-div.innerHTML = html;
-  document.getElementById('id-character').append(htmlCardContainerImage);
-  document.getElementById('id-character').append(htmlCardContainerId);
-  document.getElementById('id-character').append(htmlCardContainerName);
-  document.getElementById('id-character').append(htmlCardContainerStatus);
-  document.getElementById('id-character').append(htmlCardContainerGender);
-  document.getElementById('id-character').append(htmlCardContainerOrigin);
-  document.createElement("li")
-}
+const objectRMData = rickResultData();
+const dataSlice = objectRMData.slice(0, 12);
+const container = document.getElementById('container-cards');
+const makeCard = () => {
+  Object.entries(dataSlice).forEach(([key, value]) => {
+    const card = `
+    <div class="cards_char" id="${key}">
+      <div class="img-container">
+          <img src="${value.image}" alt="character image">
+      </div>
+      <div class="properties-container">
+        <div class="properties_characters">
+          <span>Número de ID:</span>
+          <p>${value.id}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Nombre:</span>
+          <p>${value.name}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Estado:</span>
+          <p>${value.status}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Género:</span>
+          <p>${value.gender}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Origen:</span>
+          <p>${value.origin.name}</p>
+        </div>
+        <div class="properties_characters">
+          <span>Locación:</span>
+          <p>${value.location.name}</p>
+        </div>
+      </div>
+      `;
+    container.innerHTML += card;
+  });
+};
+makeCard();
 
 document.getElementById('seasons-button').addEventListener('click', () => {
+  container.innerHTML = '';
   document.getElementById('seasons').style.display = 'block';
 });
 */
