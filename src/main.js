@@ -217,6 +217,7 @@ function slides(){
 };
 
 
+
 const objectRMData = rickResultData();
 const dataSlice = objectRMData.slice(0, 12);
 const container = document.getElementById('container-cards');
