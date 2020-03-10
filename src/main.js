@@ -14,7 +14,7 @@ buttonAlien.addEventListener('click',() =>{
   const result = document.getElementById("wrapper")
   for(const item of filterAlien){
     const listItem = document.createElement('p')
-    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${value.image}`
     result.appendChild(listItem)
   }
 })
