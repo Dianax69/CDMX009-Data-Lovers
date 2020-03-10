@@ -18,11 +18,11 @@
   padding-top: 22px;
   border-radius: 16px 16px 16px 16px;
   opacity: 8;
-  border: 3px; 
-  border-style:solid; 
+  border: 3px;
+  border-style:solid;
   border-color:#CEFF24;
   cursor: pointer;
-} 
+}
 
 .all_seasons:hover {
   background-color: rgb(166, 238, 93);
@@ -76,6 +76,7 @@ body{
   display: flex;
   box-shadow: 8px 9px 19px 20px rgba(0,0,0,0.2);
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .categories ul {
@@ -98,6 +99,7 @@ body{
   padding-top: 22px;
   border-radius: 16px 16px 16px 16px;
   opacity: 8;
+  cursor: pointer;
 }
 .categories a:hover {
   background-color: rgb(166, 238, 93);
@@ -139,6 +141,7 @@ body{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 }
 
 .credits > p {
@@ -165,15 +168,15 @@ body{
   height: 249px;
   border-radius: 50px;
   position: absolute;
-  padding-top: 25px;
+  padding-top: 55px;
   padding-left: 13px;
   z-index: -1;
 }
 
 .main_menu {
-  border:3px; 
-  border-style:solid; 
-  border-color:#CEFF24; 
+  border:3px;
+  border-style:solid;
+  border-color:#CEFF24;
   padding: 1em;
   cursor: pointer;
 }
@@ -182,7 +185,7 @@ p {
   color: #00B0C8;
   font-size: 20px;
   display: flex;
-  padding-left: 436px;
+  padding-left: 415px;
   margin-top: -24px;
 }
 
@@ -191,11 +194,6 @@ p {
   display: flex;
   padding-left: 285px;
   margin-top: 19px;
-}
-
-#seasons {
-  display: none;
-  width: 285px;
 }
 
 #wrapper_data {
