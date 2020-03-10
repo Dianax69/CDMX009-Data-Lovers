@@ -1,6 +1,6 @@
 // alias for import
 import { rickResultData } from './data.js';
-// Data
+// declare const with a array values
 const objectRMData = rickResultData();
 
 // function for slider
@@ -31,7 +31,7 @@ function slides(){
   }
 };
 
-// Function to show only 12 characters on main page using method slice
+
 const container = document.getElementById('container-cards');
 const makeCard = (object) => {
   container.innerHTML = '';
@@ -77,89 +77,89 @@ const makeCard = (object) => {
   });
 };
 
+/* funciton generate a card
+  use slice to resize array and show only 12 positions
+  Params: Original object
+*/
 makeCard(objectRMData.slice(0, 12));
+// Filter for Species
+/*
+  function to generate a filter object with params
+  Prams: (Original object, key to filter, value to match with key)
+*/
+const objectFiltered = (obj, key, value) => obj.filter((item) => item[key] === value);
 
-// FILTER FOR ESPECIE
-// Filter of specieAlien
-const filterAlien = objectRMData.filter((item) => item.species === 'Alien');
-// Button of filter of Alien
-const buttonAlien = document.querySelector('#alien');
-buttonAlien.addEventListener('click', () => {
-  makeCard(filterAlien);
+// detect any click from group ul (li)
+document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
+  switch (e.target.id) {
+    case 'alien': {
+      const filterObject = objectFiltered(objectRMData, 'species', 'Alien');
+      makeCard(filterObject);
+      break;
+    }
+    case 'animal': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Animal'));
+      break;
+    }
+    case 'cronenberg': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Cronenberg'));
+      break;
+    }
+    case 'speciesUnknown': {
+      makeCard(objectFiltered(objectRMData, 'species', 'unknown'));
+      break;
+    }
+    case 'disease': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Disease'));
+      break;
+    }
+    case 'human': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Human'));
+      break;
+    }
+    case 'humanoid': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Humanoid'));
+      break;
+    }
+    case 'mythological': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Mythological'));
+      break;
+    }
+    case 'parasite': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Parasite'));
+      break;
+    }
+    case 'robot': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Robot'));
+      break;
+    }
+    case 'vampire': {
+      makeCard(objectFiltered(objectRMData, 'species', 'Vampire'));
+      break;
+    }
+    default: {
+      break;
+    }
+  }
 });
-const filterAnimal = objectRMData.filter((item) => item.species === 'Animal');
-const buttonAnimal = document.querySelector('#animal');
-buttonAnimal.addEventListener('click', () => {
-  makeCard(filterAnimal);
+// Filter for Status
+const filterAlive = objectRMData.filter((item) => item.status === 'Alive');
+// Button of filter of Alive
+const buttonAlive = document.querySelector('#alive');
+buttonAlive.addEventListener('click', () => {
+  makeCard(filterAlive);
 });
-// Filter of specieCronenberg
-const filterCronenberg = objectRMData.filter((item) => item.species === 'Cronenberg');
-// Button of filter of Cronenberg
-const buttonCronenberg = document.querySelector('#cronenberg');
-buttonCronenberg.addEventListener('click', () => {
-  makeCard(filterCronenberg);
+// Fiter of statusDead
+const filterDead = objectRMData.filter((item) => item.status === 'Dead');
+// Button of filter of Dead
+const buttonDead = document.querySelector('#dead');
+buttonDead.addEventListener('click', () => {
+  makeCard(filterDead);
 });
-// Filter of specieUnknown
-const filterSpecieUnknown = objectRMData.filter((item) => item.species === 'speciesUnknown');
-// Button of filter of unknown
-const buttonSpecieUnknown = document.querySelector('#speciesUnknown');
-buttonSpecieUnknown.addEventListener('click', () => {
-  makeCard(filterSpecieUnknown);
-});
-// Filter of specieDisease
-const filterDisease = objectRMData.filter((item) => item.species === 'Disease');
-// Button of filter of Disease
-const buttonDisease = document.querySelector('#disease');
-buttonDisease.addEventListener('click', () => {
-  makeCard(filterDisease);
-});
-// Filter of specieHuman
-const filterHuman = objectRMData.filter((item) => item.species === 'Human');
-// Button of filter of Human
-const buttonHuman = document.querySelector('#human');
-buttonHuman.addEventListener('click', () => {
-  makeCard(filterHuman);
-});
-// Filter of EspecieHumanoid 7
-const filterHumanoid = objectRMData.filter((item) => item.species === 'Humanoid');
-// Button to filter Humanoid
-const buttonHumanoid = document.querySelector('#humanoid');
-buttonHumanoid.addEventListener('click', () => {
-  makeCard(filterHumanoid);
-});
-// Filter of EspecieMythological 8
-const filterMythological = objectRMData.filter((item) => item.species === 'Mythological');
-// Button to filter Mythological
-const buttonMythological = document.querySelector('#mythological');
-buttonMythological.addEventListener('click', () => {
-  makeCard(filterMythological);
-});
-// Filter of EspecieParasite 9
-const filterParasite = objectRMData.filter((item) => item.species === 'Parasite');
-// Button of filter of Parasite
-const buttonParasite = document.querySelector('#parasite');
-buttonParasite.addEventListener('click', () => {
-  makeCard(filterParasite);
-});
-// Filter of specieRobot 10
-const filterRobot = objectRMData.filter((item) => item.species === 'Robot');
-// Button of filter of Robot
-const buttonRobot = document.querySelector('#robot');
-buttonRobot.addEventListener('click', () => {
-  makeCard(filterRobot);
-});
-// Filter of EspecieVampire 11
-const filterVampire = objectRMData.filter((item) => item.species === 'Vampire');
-// Button of filter of Vampire
-const buttonVampire = document.querySelector('#vampire');
-buttonVampire.addEventListener('click', () => {
-  makeCard(filterVampire);
-});
-// FILTER FOR GENDER
-// Fiter of specieGender
-const filterGenderUnknown = objectRMData.filter((item) => item.species === 'GenderUnknown');
-// Button of filter of Vampire
-const buttonGenderUnknown = document.querySelector('#genderUnknown');
-buttonGenderUnknown.addEventListener('click', () => {
-  makeCard(filterGenderUnknown);
+// Filter of statusUnknown
+const filterEstatusUnknown = objectRMData.filter((item) => item.status === 'unknown');
+// Button of filter of Unknown
+const buttonEstatusUnknown = document.querySelector('#statusUnknown');
+buttonEstatusUnknown.addEventListener('click', () => {
+  makeCard(filterEstatusUnknown);
 });
