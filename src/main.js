@@ -2,7 +2,7 @@
 import { rickResultData } from './data.js';
 //Data
 const objectRMData = rickResultData();
-/*
+
 //FILTER OF ESPECIE
 //Fiter of EspecieAlien 1
 const filterAlien = objectRMData.filter (item => {
@@ -170,11 +170,11 @@ buttonVampire.addEventListener('click',() =>{
 })
 
 // FILTER FOR GENER
-//Fiter of EspecieGender
+//Fiter of GenderUnknow
 const filterGenderUnknown = objectRMData.filter (item => {
 return item.gender === "unknown";
 })
-//Button of filter of Vampire
+//Button of filter of unknown
 const buttonGenderUnknown = document.querySelector('#GenderUnknown')
 buttonGenderUnknown.addEventListener('click',() =>{
   const result = document.getElementById("wrapper")
@@ -184,10 +184,325 @@ buttonGenderUnknown.addEventListener('click',() =>{
     result.appendChild(listItem)
   }
 })
+
+//Fiter of GenderFemale
+const filterFemale = objectRMData.filter (item => {
+return item.gender === "Female";
+})
+//Button of filter of Female
+const buttonFemale = document.querySelector('#Female')
+buttonFemale.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterFemale){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of GenderMale
+const filterMale = objectRMData.filter (item => {
+return item.gender === "Male";
+})
+//Button of filter of male
+const buttonMale = document.querySelector('#Male')
+buttonMale.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterMale){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of GenderNoGender
+const filterNoGender = objectRMData.filter (item => {
+return item.gender === "Genderless";
+})
+//Button of filter of NoGender
+const buttonNoGender = document.querySelector('#NoGender')
+buttonNoGender.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterNoGender){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+// FILTER FOR STATUS
+//Fiter of EstatusAlive
+const filterAlive = objectRMData.filter (item => {
+return item.status === "Alive";
+})
+//Button of filter of Alive
+const buttonAlive = document.querySelector('#Alive')
+buttonAlive.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterAlive){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of EstatusDead
+const filterDead = objectRMData.filter (item => {
+return item.status === "Dead";
+})
+//Button of filter of Dead
+const buttonDead = document.querySelector('#Dead')
+buttonDead.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterDead){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of EstatusUnknown
+const filterEstatusUnknown = objectRMData.filter (item => {
+return item.status === "unknown";
+})
+//Button of filter of Unknown
+const buttonEstatusUnknown = document.querySelector('#StatusUnknown')
+buttonEstatusUnknown.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterEstatusUnknown){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+// FILTER FOR ORIGIN
+//Fiter of OriginAbadango
+const filterAbadango = objectRMData.filter (item => {
+return item.origin.name === "Abadango";
+})
+//Button of filter of Abadango
+const buttonAbadango = document.querySelector('#Abadango')
+buttonAbadango.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterAbadango){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of OriginAlphabetrium
+const filterAlphabetrium = objectRMData.filter (item => {
+return item.origin.name === "Alphabetrium";
+})
+//Button of filter of Alphabetrium
+const buttonAlphabetrium = document.querySelector('#Alphabetrium')
+buttonAlphabetrium.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterAlphabetrium){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of OriginBepis9
+const filterBepis9 = objectRMData.filter (item => {
+return item.origin.name === "Bepis 9";
+})
+//Button of filter of Bepis9
+const buttonBepis9 = document.querySelector('#Bepis')
+buttonBepis9.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterBepis9){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of OriginCableInterdimensional PENDIENTE
+const filterCable = objectRMData.filter (item => {
+return item.origin.name === "";
+})
+//Button of filter of Cable Interdimensional
+const buttonCable = document.querySelector('#Cable')
+buttonCable.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterCable){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of OriginUnknown
+const filterOriginUnknown = objectRMData.filter (item => {
+return item.origin.name === "unknown";
+})
+//Button of filter of OrigenUnknown
+const buttonOriginUnknown = document.querySelector('#OriginUnknown')
+buttonOriginUnknown.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterOriginUnknown){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of Gazorpazorp
+const filterGazorpazorp = objectRMData.filter (item => {
+return item.origin.name === "Gazorpazorp";
+})
+//Button of filter of Garzorpazorp
+const buttonGazorpazorp = document.querySelector('#Gazorpazorp')
+buttonGazorpazorp.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterGazorpazorp){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of Nuptia
+const filterNuptia = objectRMData.filter (item => {
+return item.origin.name === "Nuptia 4";
+})
+//Button of filter of Nuptia
+const buttonNuptia = document.querySelector('#Nuptia')
+buttonNuptia.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterNuptia){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of FantasyWorld
+const filterFantasyWorld = objectRMData.filter (item => {
+return item.origin.name === "Fantasy World";
+})
+//Button of filter of FantasyWorld
+const buttonFantasyWorld = document.querySelector('#FantasyWorld')
+buttonFantasyWorld.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterFantasyWorld){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of PurgePlanet
+const filterPurgePlanet = objectRMData.filter (item => {
+return item.origin.name === "Purge Planet";
+})
+//Button of filter of PurgePlanet
+const buttonPurgePlanet = document.querySelector('#PurgePlanet')
+buttonPurgePlanet.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterPurgePlanet){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of Earth5-126
+const filterEarth126 = objectRMData.filter (item => {
+return item.origin.name === "Earth (5-126)";
+})
+//Button of filter of Earth5-126
+const buttonEarth126 = document.querySelector('#Earth5-126')
+buttonEarth126.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterEarth126){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of Earth (C-500A)
+const filterEarthC500A = objectRMData.filter (item => {
+return item.origin.name === "Earth (C-500A)";
+})
+//Button of filter of Earth (C-500A)
+const buttonEarthC500A = document.querySelector('#EarthC-500A')
+buttonEarthC500A.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterEarthC500A){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of EarthC-137
+const filterEarthC137 = objectRMData.filter (item => {
+return item.origin.name === "Earth (C-137)";
+})
+//Button of filter of EarthC137
+const buttonEarthC137 = document.querySelector('#EarthC-137')
+buttonEarthC137.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterEarthC137){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+
+//Fiter of EarthReplacement
+const filterEarthReplacement = objectRMData.filter (item => {
+return item.origin.name === "Earth (Replacement Dimension)";
+})
+//Button of filter of EarthReplacement
+const buttonEarthReplacement = document.querySelector('#EarthReplacement')
+buttonEarthReplacement.addEventListener('click',() =>{
+  const result = document.getElementById("wrapper")
+  for(const item of filterEarthReplacement){
+    const listItem = document.createElement('p')
+    listItem.textContent =`${item.name} ${item.status} ${item.species} ${item.type} ${item.gender}`
+    result.appendChild(listItem)
+  }
+})
+/*
+LIST ORIGIN
+Earth (C-137)
+Earth (Replacement Dimension)
+unknown
+Signus 5 Expanse
+Post-Apocalyptic Earth
+Purge Planet
+Venzenulon 7
+Earth (C-500A)
+Earth (Evil Ricks Target Dimension)
+Nuptia 4
+Fantasy World
+Bird World
+Gromflom Prime
+Ricks Battery Microverse
+The Menagerie
+Earth (K-83)
+Hideout Planet
+Cronenberg Earth
+Giants Town
+Unitys Planet
+Earth (C-500A)
+Earth (Unknown dimension)
+Anatomy Park
+Earth (J19ζ7)
+Eric Stoltz Mask Earth
+Gazorpazorp
+Resort Planet
+Hamster in Butt World
+Earth (Giant Telepathic Spiders Dimension)
 */
-
-
-
 // function for slider
 let slider = document.querySelector('.container-slider')
 let sliderIndividual = document.querySelectorAll('.slider-container')
@@ -216,7 +531,7 @@ function slides(){
   }
 };
 
-
+/*
 
 const objectRMData = rickResultData();
 const dataSlice = objectRMData.slice(0, 12);
