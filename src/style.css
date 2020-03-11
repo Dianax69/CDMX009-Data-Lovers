@@ -76,6 +76,7 @@ body{
   display: flex;
   box-shadow: 8px 9px 19px 20px rgba(0,0,0,0.2);
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .categories ul {
@@ -98,6 +99,7 @@ body{
   padding-top: 22px;
   border-radius: 16px 16px 16px 16px;
   opacity: 8;
+  cursor: pointer;
 }
 .categories a:hover {
   background-color: rgb(166, 238, 93);
@@ -123,10 +125,23 @@ body{
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px 1024px) {
+  .container-slider {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .container-slider, container {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
 #container-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  
 }
 
 .credits > p {
@@ -150,11 +165,11 @@ body{
 }
 
 .img-container img {
-  height: 218px;
+  height: 249px;
   border-radius: 50px;
   position: absolute;
-  padding-top: 11px;
-  padding-left: 14px;
+  padding-top: 55px;
+  padding-left: 13px;
   z-index: -1;
 }
 
@@ -170,8 +185,8 @@ p {
   color: #00B0C8;
   font-size: 20px;
   display: flex;
-  padding-left: 452px;
-  margin-top: -23px;
+  padding-left: 415px;
+  margin-top: -24px;
 }
 
 .properties_characters span {
@@ -181,12 +196,9 @@ p {
   margin-top: 19px;
 }
 
-#seasons {
-  display: none;
-}
-
 #wrapper_data {
   display: flex;
-  margin-top: 130px;
-  padding-left: 28px;
+  margin-top: 150px;
+  padding-left: 29px;
+  padding-right: 34px;
 }

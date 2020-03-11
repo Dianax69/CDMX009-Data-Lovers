@@ -22,83 +22,75 @@
     </header>
     <!-- Button to show random characters -->
     <div>
-      <button class="button_characters" id="button-random-char">Personajes  Aleatorios</button>
+      <button class="button_characters" id="button-random-char">Personajes Aleatorios</button>
     </div>
     <!-- Starts drop down menu -->
     <div class="categories" id="drop-down-menu">
       <ul>
         <li><a class ="main_menu" id="species">Especie</a>
-          <ul class="submenu_species">
-           <li> <a id="Alien">Alien</a> </li>
-           <li><a id="Animal">Animal</a></li>
-           <li><a id="Cronenberg">Cronenberg</a></li>
-           <li><a id="SpeciesUnknown">Desconocido</a></li>
-           <li><a id="Disease">Enfermedad</a></li>
-           <li><a id="Human">Humano</a></li>
-           <li><a id="Humanoid">Humanoide</a></li>
-           <li><a id="Mythological">Mitológico</a></li>
-           <li><a id="Parasite">Parásito</a></li>
-           <li><a id="Robot">Robot</a></li>
-           <li><a id="Vampire">Vampire</a></li>
+          <ul id="buttonGroupSpecies" class="submenu_species">
+           <li> <a id="alien">Alien</a> </li>
+           <li><a id="animal">Animal</a></li>
+           <li><a id="cronenberg">Cronenberg</a></li>
+           <li><a id="speciesUnknown">Desconocido</a></li>
+           <li><a id="disease">Enfermedad</a></li>
+           <li><a id="human">Humano</a></li>
+           <li><a id="humanoid">Humanoide</a></li>
+           <li><a id="mythological">Mitológico</a></li>
+           <li><a id="parasite">Parásito</a></li>
+           <li><a id="robot">Robot</a></li>
+           <li><a id="vampire">Vampiro</a></li>
           </ul>
         </li>
         <li><a class ="main_menu" id="gender">Género</a>
           <ul class="submenu_gender">
-            <li><a id="GenderUnknown">Desconocido</a></li>
-            <li><a id="Female">Femenino</a></li>
-            <li><a id="Male">Masculino</a></li>
-            <li><a id="NoGender">Sin Género</a></li>
+            <li><a id="genderUnknown">Desconocido</a></li>
+            <li><a id="female">Femenino</a></li>
+            <li><a id="male">Masculino</a></li>
+            <li><a id="noGender">Sin Género</a></li>
           </ul>
         </li>
         <li><a class ="main_menu" id="status">Estado</a>
           <ul class="submenu_status">
-            <li><a id="Alive">Vivo</a></li>
-            <li><a id="Dead">Muerto</a></li>
-            <li><a id="StatusUnknown">Desconocido</a></li>
+            <li><a id="alive">Vivo</a></li>
+            <li><a id="dead">Muerto</a></li>
+            <li><a id="statusUnknown">Desconocido</a></li>
           </ul>
         </li>
         <li><a class ="main_menu" id="origin">Origen</a>
           <ul class="submenu_origin">
-            <li><a id="Abadango">Abadango</a></li>
-            <li><a id="Alphabetrium">Alphabetrium</a></li>
-            <li><a id="Bepis">Bepis 9</a></li>
-            <li><a id="Cable">Cable interdimensional</a></li>
-            <li><a id="OriginUnknown">Desconocido</a></li>
-            <li><a id="Gazorpazorp">Gazorpazorp</a></li>
-            <li><a id="Nuptia">Nuptia 4</a></li>
-            <li><a id="FantasyWorld">Mundo de Fantasia</a></li>
-            <li><a id="PurgePlanet">Planeta Purga</a></li>
-            <li><a id="Earth5-126">Tierra 5-126</a></li>
-            <li><a id="EarthC-500A">Tierra C-500A</a></li>
-            <li><a id="EarthC-137">Tierra C-137</a></li>
-            <li><a id="EarthReplacement">Tierra Dimensión de Reemplazo</a></li>
+            <li><a id="abadango">Abadango</a></li>
+            <li><a id="alphabetrium">Alphabetrium</a></li>
+            <li><a id="bepis">Bepis 9</a></li>
+            <li><a id="cable">Cable interdimensional</a></li>
+            <li><a id="originUnknown">Desconocido</a></li>
+            <li><a id="gazorpazorp">Gazorpazorp</a></li>
+            <li><a id="nuptia">Nuptia 4</a></li>
+            <li><a id="fantasyWorld">Mundo de Fantasia</a></li>
+            <li><a id="purgePlanet">Planeta Purga</a></li>
+            <li><a id="earth5-126">Tierra 5-126</a></li>
+            <li><a id="earthC-500A">Tierra C-500A</a></li>
+            <li><a id="earthC-137">Tierra C-137</a></li>
+            <li><a id="earthReplacement">Tierra Dimensión de Reemplazo</a></li>
           </ul>
         </li>
-        <li><button class ="all_seasons" id="seasons-button">Episodios</a></li>
+        <li><a class="main_menu" id="episodes">Episodios</a>
+          <ul class="submenu_episodes">
+            <li><a id="seasonOne">Temporada 1</a></li>
+            <li><a id="seasonTwo">Temporada 2</a></li>
+            <li><a id="seasonThree">Temporada 3</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
-    <!-- Page for Seasons -->
-  <section id="seasons" class="input_seasons">
-    <input type="image" src="./asset/seasonone.jpg"/>Temporada 1</li>
-    <input type="image" src="./asset/seasontwo.jpg"/>Temporada 2</li>
-    <input type="image" src="./asset/seasonthree.jpg"/>Temporada 3</li>
-</section>
-
-<div class="">
-  <div class="" id="wrapper"> </div>
-</div>
     <!-- cards to show random characters -->
   <section id="wrapper_data">
     <div id="container-cards"></div>
 
 
-
-
-
   </section>
     <!-- Mobile menu -->
-    <!--
-    <section>
+    <!-- <section>
     <div>
       <ul class="sidenav" id="mobile-menu">
         <li><a href="" id="species">Especies</a></li>
@@ -108,7 +100,7 @@
         <li><a id="episodes">Episodios</a></li>
       </ul>
     </div>
-  </section> -->
+  </section>  -->
     <!-- footer and credits -->
     <footer class="credits" id="footer">
       <p>Created by: Dianax69 & IrisFyD. For &lt;Laboratoria&gt;, bitch!</p>
