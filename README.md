@@ -14,28 +14,28 @@ Fans y no tan fans de de la aclamada serie Rick and Morty, los espectadores rond
 #### Pruebas de diseño UX
 
 ### sketches
-(Imagen 1)
+(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-02.jpg?raw=true)
 Feedback en: Distribución de la información, organización
 -
 -
 -
 
 ### Keyframe
-(imagen 2)
+(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-04.jpg?raw=true)
 Feedback en: usabilidad y interacción.
 -
 -
 -
 
 ### Prototipo
-(imagen 3)
+(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-03.jpg?raw=true)
 Feedback en: diseño de interfaz.
 -
 -
 -
 
 ### Historias de usuario
-
+(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-05.jpg?raw=true)
 
 
 ## 3. Objetivos de aprendizaje
