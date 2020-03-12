@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans">
   </head>
   <body>
-    <!-- Header slider -->
-    <header>
-      <div class="container">
+    <div class="loader"></div>
+  </div>
+    <header id="header"><a href="#" id="menu_on">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+      <div id="cs-container" class="container">
         <div class= "container-slider">
         <div class="slider-container"><img src="asset/bienvenido.png" alt=""></div>
         <div class="slider-container"><img src="asset/bienvenido1.png" alt=""></div>
@@ -20,12 +25,10 @@
       </div>
       </div>
     </header>
-    <!-- Button to show random characters -->
     <div>
       <button class="button_characters" id="button-random-char">Personajes Aleatorios</button>
     </div>
-    <!-- Starts drop down menu -->
-    <div class="categories" id="drop-down-menu">
+    <div id="drop-down-menu" class="categories">
       <ul>
         <li><a class ="main_menu" id="species">Especie</a>
           <ul id="buttonGroupSpecies" class="submenu_species">
@@ -43,14 +46,14 @@
           </ul>
         </li>
         <li><a class ="main_menu" id="gender">Género</a>
-          <ul class="submenu_gender">
+          <ul id="buttonGroupGender"class="submenu_gender">
             <li><a id="genderUnknown">Desconocido</a></li>
             <li><a id="female">Femenino</a></li>
             <li><a id="male">Masculino</a></li>
             <li><a id="noGender">Sin Género</a></li>
           </ul>
         </li>
-        <li><a class ="main_menu" id="status">Estado</a>
+        <li><a class ="main_menu" id="status">Status</a>
           <ul class="submenu_status">
             <li><a id="alive">Vivo</a></li>
             <li><a id="dead">Muerto</a></li>
@@ -58,20 +61,16 @@
           </ul>
         </li>
         <li><a class ="main_menu" id="origin">Origen</a>
-          <ul class="submenu_origin">
-            <li><a id="abadango">Abadango</a></li>
-            <li><a id="alphabetrium">Alphabetrium</a></li>
-            <li><a id="bepis">Bepis 9</a></li>
-            <li><a id="cable">Cable interdimensional</a></li>
-            <li><a id="originUnknown">Desconocido</a></li>
-            <li><a id="gazorpazorp">Gazorpazorp</a></li>
+          <ul id="buttonGroupOrigin" class="submenu_origin">
+            <li><a id="anatomy-park">Anatomy Park</a></li>
+            <li><a id="origin-unknown">Desconocido</a></li>
             <li><a id="nuptia">Nuptia 4</a></li>
-            <li><a id="fantasyWorld">Mundo de Fantasia</a></li>
-            <li><a id="purgePlanet">Planeta Purga</a></li>
-            <li><a id="earth5-126">Tierra 5-126</a></li>
-            <li><a id="earthC-500A">Tierra C-500A</a></li>
-            <li><a id="earthC-137">Tierra C-137</a></li>
-            <li><a id="earthReplacement">Tierra Dimensión de Reemplazo</a></li>
+            <li><a id="pluto">Pluto</a></li>
+            <li><a id="purge-planet">Planeta Purga</a></li>
+            <li><a id="earth-c">Tierra (C-500A)</a></li>
+            <li><a id="earthone-three">Tierra (C-137)</a></li>
+            <li><a id="earth-replacement">Tierra Dimensión de Reemplazo</a></li>
+            <li><a id="post-apocalypt">Tierra Post-Apocaliptica</a></li>
           </ul>
         </li>
         <li><a class="main_menu" id="episodes">Episodios</a>
@@ -86,24 +85,20 @@
     <!-- cards to show random characters -->
   <section id="wrapper_data">
     <div id="container-cards"></div>
-
-
   </section>
-    <!-- Mobile menu -->
-    <!-- <section>
-    <div>
-      <ul class="sidenav" id="mobile-menu">
-        <li><a href="" id="species">Especies</a></li>
-        <li><a id="gender">Género</a></li>
-        <li><a id="status">Estado</a></li>
-        <li><a id="origin">Historia</a></li>
-        <li><a id="episodes">Episodios</a></li>
-      </ul>
-    </div>
-  </section>  -->
+  <!-- Mobile menu -->
+  <div id="mobile-menu" style="display: none;">
+    <ul class="sidenav">
+      <li><a href="" id="species">Especies</a></li>
+      <li><a id="gender">Género</a></li>
+      <li><a id="status">Estado</a></li>
+      <li><a id="origin">Historia</a></li>
+      <li><a id="episodes">Episodios</a></li>
+    </ul>
+  </div>
     <!-- footer and credits -->
     <footer class="credits" id="footer">
-      <p>Created by: Dianax69 & IrisFyD. For &lt;Laboratoria&gt;, bitch!</p>
+      <article class="creators">Created by: Dianax69 & IrisFyD. For &lt;Laboratoria&gt;, bitch!</article>
     </footer>
     <script src="main.js" type="module"></script>
   </body>

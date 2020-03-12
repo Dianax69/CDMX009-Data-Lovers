@@ -2,7 +2,6 @@
 import { rickResultData } from './data.js';
 // declare const with a array values
 const objectRMData = rickResultData();
-
 // function for slider
 let slider = document.querySelector('.container-slider')
 let sliderIndividual = document.querySelectorAll('.slider-container')
@@ -30,8 +29,7 @@ function slides(){
     },1500)
   }
 };
-
-
+// card from HTML
 const container = document.getElementById('container-cards');
 const makeCard = (object) => {
   container.innerHTML = '';
@@ -56,7 +54,7 @@ const makeCard = (object) => {
           <p>${value.status}</p>
         </div>
         <div class="properties_characters">
-        <span>Estado:</span>
+        <span>Especie:</span>
         <p>${value.species}</p>
       </div>
         <div class="properties_characters">
@@ -76,8 +74,7 @@ const makeCard = (object) => {
     container.innerHTML += card;
   });
 };
-
-/* funciton generate a card
+/* function generates a card
   use slice to resize array and show only 12 positions
   Params: Original object
 */
@@ -88,7 +85,6 @@ makeCard(objectRMData.slice(0, 12));
   Prams: (Original object, key to filter, value to match with key)
 */
 const objectFiltered = (obj, key, value) => obj.filter((item) => item[key] === value);
-
 // detect any click from group ul (li)
 document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
   switch (e.target.id) {
@@ -142,6 +138,31 @@ document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
     }
   }
 });
+// Filter for Gender
+document.querySelector('#buttonGroupGender').addEventListener('click', (e) => {
+  switch (e.target.id) {
+    case 'genderUnknown': {
+      const filterObject = objectFiltered(objectRMData, 'gender', 'unknown');
+      makeCard(filterObject);
+      break;
+    }
+    case 'female': {
+      makeCard(objectFiltered(objectRMData, 'gender', 'Female'));
+      break;
+    }
+    case 'male': {
+      makeCard(objectFiltered(objectRMData, 'gender', 'Male'));
+      break;
+    }
+    case 'noGender': {
+      makeCard(objectFiltered(objectRMData, 'gender', 'Genderless'));
+      break;
+    }
+    default: {
+      break;
+    }
+  }
+});
 // Filter for Status
 const filterAlive = objectRMData.filter((item) => item.status === 'Alive');
 // Button of filter of Alive
@@ -149,17 +170,73 @@ const buttonAlive = document.querySelector('#alive');
 buttonAlive.addEventListener('click', () => {
   makeCard(filterAlive);
 });
-// Fiter of statusDead
 const filterDead = objectRMData.filter((item) => item.status === 'Dead');
-// Button of filter of Dead
 const buttonDead = document.querySelector('#dead');
 buttonDead.addEventListener('click', () => {
   makeCard(filterDead);
 });
-// Filter of statusUnknown
 const filterEstatusUnknown = objectRMData.filter((item) => item.status === 'unknown');
-// Button of filter of Unknown
 const buttonEstatusUnknown = document.querySelector('#statusUnknown');
 buttonEstatusUnknown.addEventListener('click', () => {
   makeCard(filterEstatusUnknown);
 });
+// Filter for Origin
+const filterOriginAnatomy = objectRMData.filter((item) => item.origin.name === 'Anatomy Park');
+const buttonOriginAnatomy = document.querySelector('#anatomy-park');
+buttonOriginAnatomy.addEventListener('click', () => {
+  makeCard(filterOriginAnatomy);
+});
+const filterOriginUnknown = objectRMData.filter((item) => item.origin.name === 'unknown');
+const buttonOriginUnknown = document.querySelector('#origin-unknown');
+buttonOriginUnknown.addEventListener('click', () => {
+  makeCard(filterOriginUnknown);
+});
+const filterOriginNuptia = objectRMData.filter((item) => item.origin.name === 'Nuptia 4');
+const buttonOriginNuptia = document.querySelector('#nuptia');
+buttonOriginNuptia.addEventListener('click', () => {
+  makeCard(filterOriginNuptia);
+});
+const filterOriginPluto = objectRMData.filter((item) => item.origin.name === 'Pluto');
+const buttonOriginPluto = document.querySelector('#pluto');
+buttonOriginPluto.addEventListener('click', () => {
+  makeCard(filterOriginPluto);
+});
+const filterOriginPurge = objectRMData.filter((item) => item.origin.name === 'Purge Planet');
+const buttonOriginPurge = document.querySelector('#purge-planet');
+buttonOriginPurge.addEventListener('click', () => {
+  makeCard(filterOriginPurge);
+});
+const filterOriginEarthC = objectRMData.filter((item) => item.origin.name === 'Earth (C-500A)');
+const buttonOriginEarthC = document.querySelector('#earth-c');
+buttonOriginEarthC.addEventListener('click', () => {
+  makeCard(filterOriginEarthC);
+});
+const filterOriginEarthOn = objectRMData.filter((item) => item.origin.name === 'Earth (C-137)');
+const buttonOriginEarthOn = document.querySelector('#earthone-three');
+buttonOriginEarthOn.addEventListener('click', () => {
+  makeCard(filterOriginEarthOn);
+});
+const filterOriginEarthRe = objectRMData.filter((item) => item.origin.name === 'Earth (Replacement Dimension)');
+const buttonOriginEarthRe = document.querySelector('#earth-replacement');
+buttonOriginEarthRe.addEventListener('click', () => {
+  makeCard(filterOriginEarthRe);
+});
+const filterOriginPostE = objectRMData.filter((item) => item.origin.name === 'Post-Apocalyptic Earth');
+const buttonOriginPostE = document.querySelector('#post-apocalypt');
+buttonOriginPostE.addEventListener('click', () => {
+  makeCard(filterOriginPostE);
+});
+
+const hola = (obj) => {
+  Object.entries(obj).forEach(([key, value]) => {
+    console.log(key);
+    console.log(value.episode);
+  });
+};
+
+// Filter for seasons
+// const arrayEpisodes  = objectRMData.filter(item) => {
+//   return item[key] === 10;
+// };
+// objectRMData.arrayEpisodes === 10
+hola(objectRMData);
