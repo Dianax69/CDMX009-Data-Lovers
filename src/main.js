@@ -138,7 +138,35 @@ document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
     }
   }
 });
+<<<<<<< HEAD
 
+=======
+// Filter for Gender
+document.querySelector('#buttonGroupGender').addEventListener('click', (e) => {
+  switch (e.target.id) {
+    case 'genderUnknown': {
+      const filterObject = objectFiltered(objectRMData, 'gender', 'unknown');
+      makeCard(filterObject);
+      break;
+    }
+    case 'female': {
+      makeCard(objectFiltered(objectRMData, 'gender', 'Female'));
+      break;
+    }
+    case 'male': {
+      makeCard(objectFiltered(objectRMData, 'gender', 'Male'));
+      break;
+    }
+    case 'noGender': {
+      makeCard(objectFiltered(objectRMData, 'gender', 'Genderless'));
+      break;
+    }
+    default: {
+      break;
+    }
+  }
+});
+>>>>>>> f1589855cff00b31b92b7c3636cd1e6070bf3865
 // Filter for Status
 const filterAlive = objectRMData.filter((item) => item.status === 'Alive');
 // Button of filter of Alive

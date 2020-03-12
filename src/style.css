@@ -118,6 +118,7 @@ body{
 #footer {
   background-image: url("asset/banner4footer.png");
   background-position: bottom;
+  width: 100%;
   padding: 30px;
   padding-top: 180px;
   background-repeat: no-repeat;
@@ -171,17 +172,26 @@ p {
   #mobile-menu {
     display: block;
   }
-  .slider-container {
-    display: none;
-  }
+
   .button_characters{
     margin-left: 213px;
+    margin-top: 0px;
   }
   #container-cards {
     margin-top: 10px;
   }
   .slider-container {
-    display: block;
+    display: none;
+}
+#header{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('./asset/bienvenido.png');
+  width: auto;
+  height: 300px;
+}
+  .slider-container {
+    display: none;
     background-size: 862px 280px;
     background-repeat: no-repeat;
   }
@@ -189,10 +199,14 @@ p {
     margin-top: 7px;
   }
   #footer {
-    width: 155%;
-    padding-left: 59px;
+    background-image: url("asset/banner4footer.png");
+    background-size: 100%;
+    background-position: bottom;
+    width: 768px;
+    padding: 30px;
+    padding-top: 180px;
+    background-repeat: no-repeat;
   }
-}
 
 /* phone */
 /* los estilos aplicaran de 360 para abajo */
