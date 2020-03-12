@@ -143,6 +143,7 @@ document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
     }
   }
 });
+
 // Filter for Status
 const filterAlive = objectRMData.filter((item) => item.status === 'Alive');
 // Button of filter of Alive
