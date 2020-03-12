@@ -1,9 +1,9 @@
-# wuWubba Lubba Dub Dub!
+# WuWubba Lubba Dub Dub!
 ¿y quién no quiere saber todo de sus personajes favoritos de la seie que sigue en su momento?
 WuWubba Luba Dub Dub es el web site ideal para saber todo dato interesante de los 493 personajes que han pasado por esta serie.
 En este multiverso, tenemos todos los personajes de las primeras 3 temporadas de Rick and Morty, aqui encontrarás,toda información interesante como su género, especie,su origen, y los capitulos donde hacen aparición.
 
-## Inviestigación de usuario
+## Investigación de usuario
 
 ### Usuario final
 
@@ -14,28 +14,28 @@ Fans y no tan fans de de la aclamada serie Rick and Morty, los espectadores rond
 #### Pruebas de diseño UX
 
 ### sketches
-(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-02.jpg?raw=true)
+![sketch](https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-02.jpg?raw=true)
 Feedback en: Distribución de la información, organización
 -
 -
 -
 
 ### Keyframe
-(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-04.jpg?raw=true)
+![Keyframe](https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-04.jpg?raw=true)
 Feedback en: usabilidad y interacción.
 -
 -
 -
 
 ### Prototipo
-(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-03.jpg?raw=true)
+![Prototipo](https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-03.jpg?raw=true)
 Feedback en: diseño de interfaz.
 -
 -
 -
 
 ### Historias de usuario
-(https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-05.jpg?raw=true)
+![Historias de usuario](https://github.com/Dianax69/CDMX009-Data-Lovers/blob/develop/src/asset/Maquetado-05.jpg?raw=true)
 
 
 ## 3. Objetivos de aprendizaje
