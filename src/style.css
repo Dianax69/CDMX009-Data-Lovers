@@ -1,3 +1,22 @@
+/* General style*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  border: 0;
+  background-image: url("asset/backgroundrym.jpg");
+  background-repeat: repeat;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-size: larger;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height:
+}
+/* Menú */
 .all_seasons > input {
   width: 200px;
   height: 200px;
@@ -28,14 +47,14 @@
   background-color: rgb(166, 238, 93);
   transition-duration: 0.4s;
 }
-
-body{
-  background-image: url("asset/backgroundrym.jpg");
-  background-repeat: repeat;
-  font-family: "Bubblegum Sans", sans-serif;
-  font-size: larger;
+/* Header */
+#container{
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
+}
+img{
+max-width: 100%;
+margin: 0 auto;
 }
 
 .button_characters:hover {
@@ -77,6 +96,9 @@ body{
   box-shadow: 8px 9px 19px 20px rgba(0,0,0,0.2);
   border-radius: 30px;
   cursor: pointer;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
 }
 
 .categories ul {
@@ -84,7 +106,8 @@ body{
   padding: 0;
   list-style: none;
   opacity: .8;
-  position: absolute;
+  flex-wrap:
+
 }
 
 .categories a {
@@ -113,9 +136,10 @@ body{
 .categories ul li a:hover + ul, .categories ul li ul:hover {
   display: block;
   opacity: 8;
+  position: absolute;
 }
 
-.container-slider{
+/*.container-slider{
   width: 100%;
   display: flex;
 }
@@ -123,7 +147,7 @@ body{
 .container{
   width: 100%;
   overflow: hidden;
-}
+}*/
 
 @media screen and (min-width: 768px 1024px) {
   .container-slider {
@@ -141,7 +165,6 @@ body{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 }
 
 .credits > p {
@@ -149,8 +172,12 @@ body{
   margin: 15px;
   margin-left: 269px;
 }
+.container-footer{
+  max-width: 100%;
+  align-self: flex-end;
+}
 
-#footer {
+/*#footer {
   background-image: url("asset/banner4footer.png");
   background-position: bottom;
   text-align: center;
@@ -162,15 +189,14 @@ body{
   background-repeat: no-repeat;
   bottom: 0pt;
   left: 0pt;
-}
+}*/
 
 .img-container img {
-  height: 249px;
+  height: 230px;
   border-radius: 50px;
   position: absolute;
-  padding-top: 55px;
-  padding-left: 13px;
   z-index: -1;
+  align-items: center;
 }
 
 .main_menu {
@@ -183,13 +209,16 @@ body{
 
 p {
   color: #00B0C8;
-  font-size: 20px;
+  font-family:century gothic;
+  font-size: 15px;
   display: flex;
   padding-left: 415px;
   margin-top: -24px;
 }
 
 .properties_characters span {
+  font-family:century gothic;
+  font-size: 15px;
   color:#CEFF24;
   display: flex;
   padding-left: 285px;

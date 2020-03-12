@@ -3,9 +3,7 @@ import { rickResultData } from './data.js';
 // declare const with a array values
 const objectRMData = rickResultData();
 
-=======
->>>>>>> fd3902f0951a30c98bcd640250014ff2cc053656
-// function for slider
+/* function for slider
 let slider = document.querySelector('.container-slider')
 let sliderIndividual = document.querySelectorAll('.slider-container')
 let contador = 1;
@@ -31,7 +29,7 @@ function slides(){
       contador=1;
     },1500)
   }
-};
+};*/
 
 
 const container = document.getElementById('container-cards');
@@ -46,9 +44,10 @@ const makeCard = (object) => {
       </div>
       <div class="properties-container">
         <div class="properties_characters">
-          <span>ID:</span>
+          <span>Nombre:</span>
           <p>${value.id}</p>
         </div>
+      <div class="properties-container">
         <div class="properties_characters">
           <span>Nombre:</span>
           <p>${value.name}</p>
@@ -90,7 +89,7 @@ makeCard(objectRMData.slice(0, 12));
   Prams: (Original object, key to filter, value to match with key)
 */
 const objectFiltered = (obj, key, value) => obj.filter((item) => item[key] === value);
-
+const arrayFilter = (array) => array.filter((item) => somthing)
 // detect any click from group ul (li)
 document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
   switch (e.target.id) {
@@ -124,7 +123,7 @@ document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
       break;
     }
     case 'mythological': {
-      makeCard(objectFiltered(objectRMData, 'species', 'Mythological'));
+      makeCard(objectFiltered(objectRMData, 'species', 'Mytholog'));
       break;
     }
     case 'parasite': {
