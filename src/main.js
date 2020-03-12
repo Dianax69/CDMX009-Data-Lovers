@@ -227,16 +227,16 @@ buttonOriginPostE.addEventListener('click', () => {
   makeCard(filterOriginPostE);
 });
 
-const hola = (obj) => {
-  Object.entries(obj).forEach(([key, value]) => {
-    console.log(key);
-    console.log(value.episode);
-  });
-};
+// const hola = (obj) => {
+//   Object.entries(obj).forEach(([key, value]) => {
+//     console.log(key);
+//     console.log(value.episode);
+//   });
+// };
 
 // Filter for seasons
 // const arrayEpisodes  = objectRMData.filter(item) => {
 //   return item[key] === 10;
 // };
 // objectRMData.arrayEpisodes === 10
-hola(objectRMData);
+// hola(objectRMData);
