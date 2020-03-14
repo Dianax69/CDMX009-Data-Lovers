@@ -1,9 +1,3 @@
-.all_seasons > input {
-  width: 200px;
-  height: 200px;
-  display: none;
-}
-
 body{
   background-image: url("asset/backgroundrym.jpg");
   background-repeat: repeat;
@@ -110,7 +104,8 @@ body{
 }
 
 .creators {
-  margin-left: 125px;
+  text-align: center;
+  margin-right: 600px;
   color:cadetblue;
   text-shadow: 0px -1px 0px yellow;
 }
@@ -118,7 +113,6 @@ body{
 #footer {
   background-image: url("asset/banner4footer.png");
   background-position: bottom;
-  width: 100%;
   padding: 30px;
   padding-top: 180px;
   background-repeat: no-repeat;
@@ -166,55 +160,123 @@ p {
 /* tablet */
 /* los estilos aplicaran de 768 para abajo */
 @media only screen and (max-width: 768px) {
-  #drop-down-menu{
-    display: none;
-  }
-  #mobile-menu {
-    display: block;
-  }
-
   .button_characters{
     margin-left: 213px;
-    margin-top: 0px;
   }
   #container-cards {
     margin-top: 10px;
   }
-  .slider-container {
-    display: none;
-}
-#header{
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url('./asset/bienvenido.png');
-  width: auto;
-  height: 300px;
-}
-  .slider-container {
-    display: none;
-    background-size: 862px 280px;
+  .credits {
+    background-image: url("./asset/banner4footer.png");
+    background-size: contain;
     background-repeat: no-repeat;
+    width: 425px;
+    height: 400px;
+  }
+  #drop-down-menu{
+    display: none;
+  }
+  #footer {
+    display: none; 
+  }
+  #header {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./asset/bienvenido.png");
+    width: 425px;
+    height: 140px;
+  }
+  #mobile-menu {
+    display: block;
+  }
+  .slider-container {
+    display: none;
   }
   #wrapper_data {
     margin-top: 7px;
   }
-  #footer {
-    background-image: url("asset/banner4footer.png");
-    background-size: 100%;
-    background-position: bottom;
-    width: 768px;
-    padding: 30px;
-    padding-top: 180px;
-    background-repeat: no-repeat;
+  .visible_menu span:nth-child(1){
+    transform: rotate(45deg) translate(-2px,1px); 
   }
-
+  
+  .visible_menu span:nth-child(2){
+    opacity: 0;
+  }
+  
+  .visible_menu span:nth-child(3){
+    transform: rotate(-45deg) translate(-3px,3px); 
+  }
+  .visible_menu #mobile_menu {
+    left: 0;
+    opacity: 1;
+  }
+  .visible_menu #content{
+    transform: translateX(260px);
+  }
 /* phone */
 /* los estilos aplicaran de 360 para abajo */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 414px) {
+  .button_characters{
+    margin-left: 89px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 25px;
+  }
+  .cards_char {
+    margin-left: -8px;
+  }
+  .container-slider {
+    display: none;
+  }
+  #container-cards {
+    margin-top: 0px;
+  }
+  .creators {
+    margin-right: auto;
+    font-size: 14px;
+    text-shadow: 0px 4px 0px black;
+  }
   #drop-down-menu{
     display: none;
   }
+  #footer {
+    background-image: url("./asset/footer4mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 0px;
+    height: 1px;
+    width: auto;
+  }
+  #header {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./asset/banner4mobile.png");
+    width: 376px;
+  }
+  .img-container img {
+    padding-left: 55px;
+    border-radius: 0px;
+    height: 249px;
+  }
   #mobile-menu {
     display: block;
+  }
+  p {
+    padding-left: 222px;
+    justify-content: flex-end;
+    text-align: end;
+    margin-right: 29px;
+    margin-left: -45px;
+  }
+  .properties-container {
+    margin-top: 316px;
+    padding-left: 22px;
+  }
+  .properties-container span{
+    padding-left: 35px;
+  }
+  #wrapper_data {
+    margin-top: auto;
   }
 }
