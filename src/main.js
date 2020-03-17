@@ -29,12 +29,23 @@ function slides(){
     },1500)
   }
 };
+
+const randomChars = (obj) => {
+  const newRandomArray = [];
+  for (let index = 0; index < obj.length; index++) {
+    newRandomArray.push(obj[Math.floor(Math.random() * obj.length)]);
+  }
+  return newRandomArray;
+};
+
+
+
 // card from HTML
 const container = document.getElementById('container-cards');
 const makeCard = (object) => {
   container.innerHTML = '';
   // Method forEach to show info for every character into a card
-  Object.entries(object).forEach(([key, value]) => {
+  Object.entries(object.slice(0, 20)).forEach(([key, value]) => {
     const card = `
     <div class="cards_char" id="${key}">
       <div class="img-container">
@@ -74,12 +85,70 @@ const makeCard = (object) => {
     container.innerHTML += card;
   });
 };
+
+
+const seasonOneEpisodesByCharacter = (obj) => {
+  const arraySeasonOne = [];
+  // cada uno de los personajes del objecto
+  Object.entries(obj).forEach(([, value]) => {
+    const allEpisodes = value.episode;
+    // cada episodio de cada uno de los personajes del objeto
+    for (let index = 0; index < allEpisodes.length; index++) {
+      const episode = allEpisodes[index];
+      const indexCharacter = episode.lastIndexOf('/');
+      const numberEpisode = episode.substring(indexCharacter + 1);
+      if (numberEpisode > '1' && numberEpisode < '11') {
+        arraySeasonOne.push(value);
+      }
+    }
+  });
+  return arraySeasonOne;
+};
+
+const seasonTwoEpisodesByCharacter = (obj) => {
+  const arraySeasonTwo = [];
+  // cada uno de los personajes del objecto
+  Object.entries(obj).forEach(([, value]) => {
+    const allEpisodes = value.episode;
+    // cada episodio de cada uno de los personajes del objeto
+    for (let index = 0; index < allEpisodes.length; index++) {
+      const episode = allEpisodes[index];
+      const indexCharacter = episode.lastIndexOf('/');
+      const numberEpisodeTwo = episode.substring(indexCharacter + 1);
+      if (numberEpisodeTwo >= '11' && numberEpisodeTwo < '21') {
+        arraySeasonTwo.push(value);
+      }
+    }
+  });
+  return arraySeasonTwo;
+};
+
+const seasonThreeEpisodesByCharacter = (obj) => {
+  const arraySeasonThree = [];
+  // cada uno de los personajes del objecto
+  Object.entries(obj).forEach(([, value]) => {
+    const allEpisodes = value.episode;
+    // cada episodio de cada uno de los personajes del objeto
+    for (let index = 0; index < allEpisodes.length; index++) {
+      const episode = allEpisodes[index];
+      const indexCharacter = episode.lastIndexOf('/');
+      const numberEpisodeThree = episode.substring(indexCharacter + 1);
+      if (numberEpisodeThree >= '22' && numberEpisodeThree < '31') {
+        arraySeasonThree.push(value);
+      }
+    }
+  });
+  return arraySeasonThree;
+};
+
 /* function generates a card
   use slice to resize array and show only 12 positions
   Params: Original object
 */
-makeCard(objectRMData.slice(0, 12));
-// Filter for Species
+makeCard(objectRMData);
+// console.log(seasonOneEpisodesByCharacter(objectRMData));
+// console.log(seasonTwoEpisodesByCharacter(objectRMData));
+// console.log(seasonThreeEpisodesByCharacter(objectRMData));
 /*
   function to generate a filter object with params
   Prams: (Original object, key to filter, value to match with key)
@@ -138,9 +207,6 @@ document.querySelector('#buttonGroupSpecies').addEventListener('click', (e) => {
     }
   }
 });
-<<<<<<< HEAD
-
-=======
 // Filter for Gender
 document.querySelector('#buttonGroupGender').addEventListener('click', (e) => {
   switch (e.target.id) {
@@ -166,7 +232,6 @@ document.querySelector('#buttonGroupGender').addEventListener('click', (e) => {
     }
   }
 });
->>>>>>> f1589855cff00b31b92b7c3636cd1e6070bf3865
 // Filter for Status
 const filterAlive = objectRMData.filter((item) => item.status === 'Alive');
 // Button of filter of Alive
@@ -231,16 +296,26 @@ buttonOriginPostE.addEventListener('click', () => {
   makeCard(filterOriginPostE);
 });
 
-// const hola = (obj) => {
-//   Object.entries(obj).forEach(([key, value]) => {
-//     console.log(key);
-//     console.log(value.episode);
-//   });
-// };
+const buttonseasonOne = document.querySelector('#seasonOne');
+buttonseasonOne.addEventListener('click', () => {
+  const showSeason = seasonOneEpisodesByCharacter(objectRMData);
+  makeCard(showSeason);
+});
 
-// Filter for seasons
-// const arrayEpisodes  = objectRMData.filter(item) => {
-//   return item[key] === 10;
-// };
-// objectRMData.arrayEpisodes === 10
-// hola(objectRMData);
+const buttonseasonTwo = document.querySelector('#seasonTwo');
+buttonseasonTwo.addEventListener('click', () => {
+  const showSeasonTwo = seasonTwoEpisodesByCharacter(objectRMData);
+  makeCard(showSeasonTwo);
+});
+
+const buttonseasonThree = document.querySelector('#seasonThree');
+buttonseasonThree.addEventListener('click', () => {
+  const showSeasonThree = seasonThreeEpisodesByCharacter(objectRMData);
+  makeCard(showSeasonThree);
+});
+
+const buttonRandom = document.querySelector('#button-random-char');
+buttonRandom.addEventListener('click', () => {
+  const charactersRandomized = randomChars(objectRMData);
+  makeCard(charactersRandomized);
+});
