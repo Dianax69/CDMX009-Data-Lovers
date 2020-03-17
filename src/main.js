@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 // alias for import
 import { rickResultData } from './data.js';
 // declare const with a array values
@@ -37,9 +38,6 @@ const randomChars = (obj) => {
   }
   return newRandomArray;
 };
-
-
-
 // card from HTML
 const container = document.getElementById('container-cards');
 const makeCard = (object) => {
