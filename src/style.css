@@ -164,31 +164,47 @@ p {
     margin-left: 213px;
   }
   #container-cards {
-    margin-top: 10px;
+    margin-top: 188px;
   }
-  .credits {
-    background-image: url("./asset/banner4footer.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 425px;
-    height: 400px;
+  .creators {
+    text-align: center;
+    color: cadetblue;
+    text-shadow: 0px -1px 0px yellow;
+    padding-top: 125px;
+    margin-right: 0px;
+  }
+  .categories ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    margin: auto;
+    flex-wrap: wrap-reverse;
   }
   #drop-down-menu{
-    display: none;
+    display: block;
   }
   #footer {
-    display: none; 
+    background-image: url("./asset/footer4mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 167px;
+    width: 701px;
   }
   #header {
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("./asset/bienvenido.png");
-    width: 425px;
-    height: 140px;
+    background-image: url("./asset/banner2fortablet.png");
+    height: 261px;
   }
   #mobile-menu {
     display: block;
   }
+  #origin {
+    margin-left: 204px;
+    margin-bottom: 6px;
+
+ } 
   .slider-container {
     display: none;
   }
