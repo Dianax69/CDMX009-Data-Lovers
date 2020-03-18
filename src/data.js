@@ -1,5 +1,5 @@
 import data from './data/rickandmorty/rickandmorty.js';
 
-export const rickInfoData = () => data.info;
-
 export const rickResultData = () => data.results;
+
+export const sum = (a, b) => a + b;
