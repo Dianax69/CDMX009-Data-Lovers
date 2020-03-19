@@ -1,106 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
+    <title>Data Lovers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wubba Lubba Dub Dub!</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="loader"></div>
-  </div>
-    <header id="header"><a href="#" id="menu_on">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
-      <div id="cs-container" class="container">
-        <div class= "container-slider">
-        <div class="slider-container"><img src="asset/bienvenido.png" alt=""></div>
-        <div class="slider-container"><img src="asset/bienvenido1.png" alt=""></div>
-        <div class="slider-container"><img src="asset/bienvenido2.png" alt=""></div>
-        <div class="slider-container"><img src="asset/bienvenido.png" alt=""></div>
-      </div>
-      </div>
-    </header>
-    <div>
-      <button class="button_characters" id="button-random-char">Personajes Aleatorios</button>
-    </div>
-    <div id="drop-down-menu" class="categories">
-      <ul>
-        <li><a class ="main_menu" id="species">Especie</a>
-          <ul id="buttonGroupSpecies" class="submenu_species">
-           <li> <a id="alien">Alien</a> </li>
-           <li><a id="animal">Animal</a></li>
-           <li><a id="cronenberg">Cronenberg</a></li>
-           <li><a id="speciesUnknown">Desconocido</a></li>
-           <li><a id="disease">Enfermedad</a></li>
-           <li><a id="human">Humano</a></li>
-           <li><a id="humanoid">Humanoide</a></li>
-           <li><a id="mythological">Mitológico</a></li>
-           <li><a id="parasite">Parásito</a></li>
-           <li><a id="robot">Robot</a></li>
-           <li><a id="vampire">Vampiro</a></li>
-          </ul>
-        </li>
-        <li><a class ="main_menu" id="gender">Género</a>
-          <ul id="buttonGroupGender"class="submenu_gender">
-            <li><a id="genderUnknown">Desconocido</a></li>
-            <li><a id="female">Femenino</a></li>
-            <li><a id="male">Masculino</a></li>
-            <li><a id="noGender">Sin Género</a></li>
-          </ul>
-        </li>
-        <li><a class ="main_menu" id="status">Status</a>
-          <ul class="submenu_status">
-            <li><a id="alive">Vivo</a></li>
-            <li><a id="dead">Muerto</a></li>
-            <li><a id="statusUnknown">Desconocido</a></li>
-          </ul>
-        </li>
-        <li><a class ="main_menu" id="origin">Origen</a>
-          <ul id="buttonGroupOrigin" class="submenu_origin">
-            <li><a id="anatomy-park">Anatomy Park</a></li>
-            <li><a id="origin-unknown">Desconocido</a></li>
-            <li><a id="nuptia">Nuptia 4</a></li>
-            <li><a id="pluto">Pluto</a></li>
-            <li><a id="purge-planet">Planeta Purga</a></li>
-            <li><a id="earth-c">Tierra (C-500A)</a></li>
-            <li><a id="earthone-three">Tierra (C-137)</a></li>
-            <li><a id="earth-replacement">Tierra Dimensión de Reemplazo</a></li>
-            <li><a id="post-apocalypt">Tierra Post-Apocaliptica</a></li>
-          </ul>
-        </li>
-        <li><a class="main_menu" id="episodes">Episodios</a>
-          <ul class="submenu_episodes">
-            <li><a id="seasonOne">Temporada 1</a></li>
-            <li><a id="seasonTwo">Temporada 2</a></li>
-            <li><a id="seasonThree">Temporada 3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <!-- cards to show random characters -->
-  <section id="wrapper_data">
-    <div id="container-cards"></div>
-  </section>
-  <!-- Mobile menu -->
-  <div id="mobile-menu" style="display: none;">
-    <ul class="sidenav">
-      <li><a href="" id="species">Especies</a></li>
-      <li><a id="gender">Género</a></li>
-      <li><a id="status">Estado</a></li>
-      <li><a id="origin">Historia</a></li>
-      <li><a id="episodes">Episodios</a></li>
-    </ul>
-  </div>
-    <!-- footer and credits -->
-    <footer class="credits" id="footer">
-      <article class="creators">Created by: Dianax69 & IrisFyD. <br>
-        For &lt;Laboratoria&gt;, bitch!</article>
-    </footer>
-    <script src="main.js" type="module"></script>
+    <div id="root"></div>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
