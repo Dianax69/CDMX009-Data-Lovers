@@ -1,4 +1,4 @@
-# Wubba Lubba Dub Dub!
+# Wubba Lubba Dub Dub! (Ahora en Github Pages : https://dianax69.github.io/CDMX009-Data-Lovers/src/)
 
 ¿Y quién no quiere saber todo de sus personajes favoritos de la serie que sigue en su momento?
 Wubba Luba Dub Dub es el web site ideal para saber todo dato interesante de los 493 personajes que han pasado por esta serie.
@@ -37,7 +37,7 @@ Feedback en Distribución de la información y organización:
 
 ## 3. Objetivos de aprendizaje
 ### UX
-  Di  Iris 
+  Diana  Iris 
 - [x] [x] Diseñar la aplicación pensando y entendiendo al usuario.
 - [x] [x] Crear prototipos para obtener _feedback_ e iterar.
 - [x] [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
@@ -68,7 +68,7 @@ Feedback en Distribución de la información y organización:
 - [x] [x] Utilizar ES Modules (`import` | `export`).
 
 ### Pruebas Unitarias (_testing_)
-- [ ] [ ] Testear funciones (funciones puras).
+- [x] [ ] Testear funciones (funciones puras).
 
 ### Git y GitHub
 - [x] [x] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
